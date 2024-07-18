@@ -1,0 +1,6 @@
+@animated_doodle.Api_HostAddress = http://localhost:5058
+
+GET {{animated_doodle.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
