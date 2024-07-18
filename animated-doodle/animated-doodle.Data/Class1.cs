@@ -1,7 +1,5 @@
-﻿namespace animated_doodle.Data
-{
-    public class Class1
-    {
+﻿namespace animated_doodle.Data;
 
-    }
+public class Class1
+{
 }
