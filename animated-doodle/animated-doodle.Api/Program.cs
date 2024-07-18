@@ -1,7 +1,11 @@
+using animated_doodle.Api.Extensions;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddCors();
+Services.AddCors(builder.Services);
+
+Services.AddSql(builder.Services, builder.Configuration);
 
 builder.Services.AddControllers();
 
