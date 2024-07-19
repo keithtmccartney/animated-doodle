@@ -1,0 +1,263 @@
+{
+	"info": {
+		"_postman_id": "baefaab4-6880-487e-a763-995f102c0df2",
+		"name": "animated-doodle",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34842082",
+		"_collection_link": "https://speeding-trinity-2399-1.postman.co/workspace/Product-API~a8e0cde7-f4f5-41f3-8f88-04a577efed71/collection/34842082-baefaab4-6880-487e-a763-995f102c0df2?action=share&source=collection_link&creator=34842082"
+	},
+	"item": [
+		{
+			"name": "Course",
+			"item": [
+				{
+					"name": "Get Courses",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:5059/v1/course",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5059",
+							"path": [
+								"v1",
+								"course"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Course",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:5059/v1/course/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5059",
+							"path": [
+								"v1",
+								"course",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Course",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Name\": \"New Course\",\r\n    \"StudentIds\": [\r\n        1,\r\n        2\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:5059/v1/course",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5059",
+							"path": [
+								"v1",
+								"course"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Course",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Name\": \"Old Course\",\r\n    \"StudentIds\": [\r\n        1\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:5059/v1/course/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5059",
+							"path": [
+								"v1",
+								"course",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Course",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:5059/v1/course/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5059",
+							"path": [
+								"v1",
+								"course",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Student",
+			"item": [
+				{
+					"name": "Get Students",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:5059/v1/student",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5059",
+							"path": [
+								"v1",
+								"student"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Student",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:5059/v1/student/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5059",
+							"path": [
+								"v1",
+								"student",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Student",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Forename\": \"New\",\r\n    \"Surname\": \"Student\",\r\n    \"DateOfBirth\": \"1999-12-01T00:00:00\",\r\n    \"EmailAddress\": \"new.student@example.com\",\r\n    \"Gender\": \"Female\",\r\n    \"CourseIds\": [\r\n        1,\r\n        2,\r\n        3\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:5059/v1/student",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5059",
+							"path": [
+								"v1",
+								"student"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Student",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Forename\": \"Jane\",\r\n    \"Surname\": \"Doe\",\r\n    \"DateOfBirth\": \"1999-12-01T00:00:00\",\r\n    \"EmailAddress\": \"jane.doe@example.com\",\r\n    \"Gender\": \"Female\",\r\n    \"CourseIds\": [\r\n        1,\r\n        2\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:5059/v1/student/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5059",
+							"path": [
+								"v1",
+								"student",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Student",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:5059/v1/student/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5059",
+							"path": [
+								"v1",
+								"student",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
