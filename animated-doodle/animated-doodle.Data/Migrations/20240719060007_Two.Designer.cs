@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using animated_doodle.Data;
 
@@ -11,9 +12,11 @@ using animated_doodle.Data;
 namespace animated_doodle.Data.Migrations
 {
     [DbContext(typeof(SchoolContext))]
-    partial class SchoolContextModelSnapshot : ModelSnapshot
+    [Migration("20240719060007_Two")]
+    partial class Two
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -35,23 +38,6 @@ namespace animated_doodle.Data.Migrations
                     b.HasIndex("StudentsId");
 
                     b.ToTable("CourseStudent");
-
-                    b.HasData(
-                        new
-                        {
-                            CoursesId = 1,
-                            StudentsId = 1
-                        },
-                        new
-                        {
-                            CoursesId = 1,
-                            StudentsId = 2
-                        },
-                        new
-                        {
-                            CoursesId = 2,
-                            StudentsId = 1
-                        });
                 });
 
             modelBuilder.Entity("animated_doodle.Data.Models.Course", b =>
