@@ -7,11 +7,7 @@ Services.AddCors(builder.Services);
 
 Services.AddSql(builder.Services, builder.Configuration);
 
-builder.Services.AddControllers();
-
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+Services.AddServices(builder.Services);
 
 var app = builder.Build();
 

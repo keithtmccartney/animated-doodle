@@ -1,12 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using animated_doodle.Data.Dtos;
 
-namespace animated_doodle.Data.Interfaces
+namespace animated_doodle.Data.Interfaces;
+
+public interface ICourseRepository
 {
-    public interface ICourseRepository
-    {
-    }
+    Task<IEnumerable<CourseDto>> GetCourses();
+
+    Task<CourseDto> GetCourse(int courseId);
+
+    Task PostCourse(CourseDto course);
+
+    Task PutCourse(int id, CourseDto course);
+
+    Task DeleteCourse(int id);
 }
