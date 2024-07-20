@@ -14,6 +14,6 @@ public class SchoolContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        //modelBuilder.Seed();
+        modelBuilder.Seed();
     }
 }
